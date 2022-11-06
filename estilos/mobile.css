@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+- Mobile: 375px
+- Desktop: 1440px
+
+- Font size (paragraph): 15px
+
+- Weights: 400, 700
+    
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor0:rgb(255, 255, 255);
+    --cor1:rgb(214, 226, 240);
+    --cor2:rgb(123, 135, 157);
+    --cor3:rgb(31, 50, 81);
+
+    --font1: 'Outfit', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+body, html{
+    background-color:var(--cor1);
+}
+
+main{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+
+}
+
+div#container{
+    border-radius: 20px;
+    background-color: var(--cor0);
+    width: 320px;
+    height: 475px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div#container > div#imagem{
+    display: block;
+    background: var(--cor0) url(../imagem/image-qr-code.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 65%;
+    width:90%;
+    border-radius: 20px;
+    margin: 15px 10px 0px 16px;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    
+
+}
+
+div#container > h1 {
+
+    color: var(--cor3);
+    font-family: var(--font1);
+    font-size: 1.37em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+div#container > p {
+    color: var(--cor2);
+    font-family: var(--font1);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-family: var(--font1);
+    position: bottom;
+}
